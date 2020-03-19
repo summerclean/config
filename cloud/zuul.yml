@@ -1,6 +1,10 @@
 server:
   port: 80
 
+ribbon:
+  okhttp:
+    enabled: true
+
 zuul:
   ignoredServices: '*'
   sensitiveHeaders: Cookie,Set-Cookie,Authorization
