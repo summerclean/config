@@ -1,5 +1,5 @@
 server:
-  port: 80
+  port: 8007
 
 ribbon:
   okhttp:
@@ -10,10 +10,10 @@ zuul:
   sensitiveHeaders: Cookie,Set-Cookie,Authorization
   routes:
     consumer:
-      path: /api/**
+      path: /a/**
       serviceId: consumer
       stripPrefix: true
     user:
-      path: /abc/**
+      path: /b/**
       serviceId: consumer
       stripPrefix: true
