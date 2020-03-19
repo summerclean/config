@@ -1,0 +1,10 @@
+server:
+  port: 80
+
+zuul:
+  ignoredServices: '*'
+  routes:
+    users:
+      path: /api/**
+      serviceId: comsumer
+      stripPrefix: true
