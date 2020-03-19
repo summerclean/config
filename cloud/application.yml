@@ -12,6 +12,6 @@ management:
 spring:
   rabbitmq:
     host: '{Cipher}4db90ccbddb839abc51f6d36c5f9564a0ab3772b19823e90ede0d242fffdc57f'
-    port: '{Cipher}3d923fec8ddbc7ff1b491ec02a55e14783c3a7486733f5f01c4f5022f3230e15'
+    port: 5672
     username: '{Cipher}3f7be53206c72d5e3eba3215ee9c9755d0cfd2816360b767eec95546abf59855'
     password: '{Cipher}3f7be53206c72d5e3eba3215ee9c9755d0cfd2816360b767eec95546abf59855'
