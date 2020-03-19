@@ -6,5 +6,5 @@ zuul:
   routes:
     users:
       path: /api/**
-      serviceId: comsumer
+      serviceId: consumer
       stripPrefix: true
