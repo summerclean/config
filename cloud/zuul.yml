@@ -3,6 +3,7 @@ server:
 
 zuul:
   ignoredServices: '*'
+  sensitiveHeaders: Cookie,Set-Cookie,Authorization
   routes:
     users:
       path: /api/**
