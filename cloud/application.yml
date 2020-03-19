@@ -9,9 +9,7 @@ management:
       exposure:
         include: '*'
 
-spring:
-  rabbitmq:
-    host: 101.132.106.160
-    port: 5672
-    username: admin
-    password: {Cipher}3f7be53206c72d5e3eba3215ee9c9755d0cfd2816360b767eec95546abf59855
+spring.rabbitmq.host=101.132.106.160
+spring.rabbitmq.port=5672
+spring.rabbitmq.username=admin
+spring.rabbitmq.password={Cipher}3f7be53206c72d5e3eba3215ee9c9755d0cfd2816360b767eec95546abf59855
