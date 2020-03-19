@@ -9,7 +9,11 @@ zuul:
   ignoredServices: '*'
   sensitiveHeaders: Cookie,Set-Cookie,Authorization
   routes:
-    users:
+    consumer:
       path: /api/**
+      serviceId: consumer
+      stripPrefix: true
+    user:
+      path: /abc/**
       serviceId: consumer
       stripPrefix: true
