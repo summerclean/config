@@ -1,0 +1,7 @@
+server:
+  port: 9422
+spring:
+  zipkin:
+    sender:
+      type: rabbitmq
+
