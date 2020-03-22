@@ -10,6 +10,8 @@ management:
         include: '*'
 
 spring:
+  zipkin:
+    base-url: http://localhost:9422
   rabbitmq:
     host: 101.132.106.160
     port: 5672
