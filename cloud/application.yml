@@ -17,12 +17,12 @@ spring:
     password: '{cipher}3f7be53206c72d5e3eba3215ee9c9755d0cfd2816360b767eec95546abf59855'
     virtual-host: my_vhost
   datasource:
-    url: '{cipher}7a2605fb3b57095884aec5033bbb785f9a74ebf438b7461ff8b2cbe11171dde4f414f773fe314a7d7234413b177831c23748d65d35c1e16d9b19f2f527eca456cf137362c5b71bd263ce4aae1041c48d5f8ffcf71315a1025daa3415b249857e'
-    username: '{cipher}9acee29fc4fb78f92654c599974c0360a086a031dd40272fa50e913bc011b76c'
+    url: jdbc:mysql://101.132.106.160:3306/busi?useUnicode=true&useSSL=false&characterEncoding=utf8
+    username: root
     password: '{cipher}1469a67b447e1b372d66dfbec1591fe809748b8e18f75bee5614b04407a18e12'
   redis:
     #redis机器ip
-    hostname: '{cipher}fe21c6e98ec5eea891610423cb20516a0d19c13615e7cd408ea56121b1332731'
+    hostname: 101.132.106.160
     #redis端口
     port: 6379
     #redis密码
