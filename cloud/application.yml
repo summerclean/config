@@ -9,6 +9,16 @@ management:
       exposure:
         include: '*'
 
+mybatis-plus:
+  mapper-locations: classpath*:mapper/**/*.xml
+  type-aliases-package: work.sihai.app.busi
+  global-config:
+    db-config:
+      field-strategy: not_empty
+      id-type: auto
+      db-type: mysql
+    banner: false
+
 spring:
   rabbitmq:
     host: 101.132.106.160
