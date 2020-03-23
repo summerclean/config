@@ -19,7 +19,7 @@ spring:
   datasource:
     url: jdbc:mysql://101.132.106.160:3306/busi?useUnicode=true&useSSL=false&characterEncoding=utf8
     username: root
-    password: '{cipher}1469a67b447e1b372d66dfbec1591fe809748b8e18f75bee5614b04407a18e12'
+    password: Mlvrs520@
   redis:
     #redis机器ip
     hostname: 101.132.106.160
