@@ -18,6 +18,7 @@ mybatis-plus:
       id-type: auto
       db-type: mysql
     banner: false
+    super-mapper-class: work.sihai.app.common.base.BaseMapper
 
 spring:
   rabbitmq:
