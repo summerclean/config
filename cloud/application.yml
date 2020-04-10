@@ -53,3 +53,28 @@ redisson:
   port: 6379
   password: '{cipher}06a5083caf5b79359382b5c4f752e67dbceb341a17dbd2b97420f34d8f811071'
   releaseTime: 8000
+
+swagger:
+  groupName: sihai
+  pathMapping: /
+  title: sihai
+  description: sihai
+  version: 1
+  termsOfServiceurl: 1
+  license: 1
+  licenseurl: 1
+
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: del  #全局逻辑删除字段值 3.3.0开始支持，详情看下面。
+      logic-delete-value: 1 # 逻辑已删除值(默认为 1)
+      logic-not-delete-value: 0 # 逻辑未删除值(默认为 0)
+
+logstash:
+  dest: 192.168.1.73:4567
+
+logging:
+  config: classpath:logback-custom.xml
+  level:
+    ROOT: INFO
