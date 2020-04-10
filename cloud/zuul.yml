@@ -8,6 +8,7 @@ ribbon:
 zuul:
   ignoredServices: '*'
   sensitiveHeaders: Cookie,Set-Cookie,Authorization
+  ignoreheaders: X-Frame-Option
   routes:
     consumer:
       path: /a/**
@@ -17,3 +18,15 @@ zuul:
       path: /b/**
       serviceId: consumer
       stripPrefix: true
+
+hims:
+  web:
+    path:
+      permitPaths:
+        - "/sys/"
+        - "/sys1/"
+
+hims-his-interface:
+  ribbon:
+    NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
+    listOfServers: 1

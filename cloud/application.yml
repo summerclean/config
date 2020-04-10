@@ -9,17 +9,6 @@ management:
       exposure:
         include: '*'
 
-mybatis-plus:
-  mapper-locations: classpath*:mapper/**/*.xml
-  type-aliases-package: work.sihai.app.busi
-  global-config:
-    db-config:
-      field-strategy: not_empty
-      id-type: auto
-      db-type: mysql
-    banner: false
-    super-mapper-class: work.sihai.app.common.base.BaseMapper
-
 spring:
   rabbitmq:
     host: 101.132.106.160
@@ -30,7 +19,7 @@ spring:
   datasource:
     url: jdbc:mysql://101.132.106.160:3306/busi?useUnicode=true&useSSL=false&characterEncoding=utf8
     username: root
-    password: Mlvrs520@
+    password: '{cipher}efd234427de7b39deb23fc7090b1d58746c8a5867f0ed24147d15c6b4cadc957'
   redis:
     #redis机器ip
     hostname: 101.132.106.160
@@ -58,3 +47,9 @@ spring:
     testOnBorrow: true
     #在空闲时检查有效性, 默认false
     testWhileIdle: true
+
+redisson:
+  address: 101.132.106.160
+  port: 6379
+  password: '{cipher}06a5083caf5b79359382b5c4f752e67dbceb341a17dbd2b97420f34d8f811071'
+  releaseTime: 8000
