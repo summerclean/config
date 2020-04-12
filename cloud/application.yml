@@ -47,12 +47,6 @@ spring:
     testOnBorrow: true
     #在空闲时检查有效性, 默认false
     testWhileIdle: true
-  data:
-    elasticsearch:
-      cluster-name: docker-cluster
-      cluster-nodes: 192.168.1.73:9300
-      repositories:
-        enabled: true # Whether to enable Elasticsearch repositories.
 
 redisson:
   address: 101.132.106.160
